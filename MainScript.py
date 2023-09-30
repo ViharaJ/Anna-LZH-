@@ -57,7 +57,6 @@ for image_name in os.listdir(imageDir):
         image = cv2.imread(imageDir + "/" + image_name)
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         
-    
         #create a horizontal line (TO-DO: PULL OUT TO A GENERAL FUNCTION)
         x = np.arange(0, image.shape[1], 1)
         y = np.full((image.shape[1]), fill_value = 300)
